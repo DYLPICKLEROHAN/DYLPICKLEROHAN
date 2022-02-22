@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @DYLPICKLEROHAN
+- 👀 I’m interested in Webdesign and data science projects
+- 🌱 I’m currently studying a masters of data science out of the university of Adelaide
+- 💞️ I’m looking to collaborate.
+- 📫 How to reach me rohad09@hotmail.com

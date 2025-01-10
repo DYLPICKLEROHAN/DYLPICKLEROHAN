@@ -1,0 +1,69 @@
+# Make new directory
+Desktop> mkdir new_folder
+
+# Open Folder
+Desktop> % cd new_folder
+
+# Creating files 
+Desktop\new_folder> echo '' > file1.txt
+Desktop\new_folder> echo '' > file2.html
+
+# Initialize git (plugging in memory card)
+git init
+
+# Save all (Staging al for saving)
+Desktop\new_folder> git add ./
+
+
+# Save file (Staging one file for saving)
+Desktop\new_folder> git add file1.txt
+
+# Commit those files to memory
+
+# Save all (-m for save message description)
+Desktop\new_folder> git commit -m 'Adding txt and html files'
+
+# Adding another file and deleting file 2
+Desktop\new_folder> echo '' > file3.txt
+Desktop\new_folder> del file2.html
+
+# Staging and saving these changes
+Desktop\new_folder> git add ./
+Desktop\new_folder> git commit -m 'removing file 2 and adding file 3'
+
+# Checking log (provides all commits and message descriptions
+Desktop\new_folder> git log
+
+# Returning to save point
+Desktop\new_folder> git checkout ********** (Hash from log)
+
+
+#### This is all local, but we can store it remotely on GitHub or other online repositories.
+
+
+# Connecting to online reposirtory
+Desktop\new_folder> git remote add origin *repo url*
+
+# A repository can hold multiple versions of the same file by storing on different branches, preventing developers from messing with each others progress. 
+
+# adding new file
+Desktop\new_folder> echo '' > file4.txt
+Desktop\new_folder>git add ./
+Desktop\new_folder> git commit -m 'adding file4'
+
+# Pushing update to remote repo (main branch)
+Desktop\new_folder> git push -u origin main
+
+# Make a new branch
+Desktop\new_folder> git checkout - b branch-name
+Desktop\new_folder> git branch
+Desktop\new_folder> git add ./
+Desktop\new_folder> git commit -m 'bringing across all to new branch'
+
+# Merging main branch and branch-name on gitrepository ith  pull request
+
+# Transfer remote versions with updates to update local files
+Desktop\new_folder> git pull origin main
+
+# Rebasing
+

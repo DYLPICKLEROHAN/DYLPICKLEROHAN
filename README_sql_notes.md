@@ -1,1 +1,1 @@
-# Learning SQL commands an demonstrating uses 
+# Learning SQL commands and demonstrating uses 

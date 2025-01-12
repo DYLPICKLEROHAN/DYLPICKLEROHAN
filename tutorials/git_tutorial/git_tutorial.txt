@@ -60,10 +60,111 @@ Desktop\new_folder> git branch
 Desktop\new_folder> git add ./
 Desktop\new_folder> git commit -m 'bringing across all to new branch'
 
-# Merging main branch and branch-name on gitrepository ith  pull request
+# Merging main branch and branch-name on git repository with  pull request
 
 # Transfer remote versions with updates to update local files
 Desktop\new_folder> git pull origin main
 
-# Rebasing
+# Rebasing rewrites commit history, enabling a chain of commits instead of a multimodal chain
 
+O--O--O--O               O--O--O--O
+      |        ------->           |
+      O--O--O                     O--O--O
+
+Desktop\new_folder> git log main
+Desktop\new_folder> git log branch1
+~ they aren't inline
+Desktop\new_folder> git checkout branch1
+Desktop\new_folder(branc1)> git rebase main 
+
+# Interactive rebranching revises commit history and combines or separates them out. Rewrites history so the graph is a single strand. 
+
+# Squash 2 onto 1
+Desktop\new_folder(branch1)> git rebase -i main
+>> pick #####1 message1
+>> s #####2 message2
+
+
+https://www.youtube.com/watch?v=aolI_Rz0ZqY&t=33s
+
+
+There are 145 git commands
+porcelain 82 commands:
+- 44 min ones
+- 11 manipulators
+- 17 interactors
+- 10 interrogators
+
+63 plumbing commands:
+- 19 manipulators
+- 21 interrogators
+- 5 syncing
+- 18 internal
+
+# Setting up an alias (stash -> 'stash --all'
+git config --global alias.staash 'stash --all'
+
+# Run script from git
+git config --global alias.bb !better-branch.sh
+
+# Looks in local and then backs up inglobal if it can't find it in local. but you can setup an inbetween. Assigning config for different projects in one line
+[includeIf "gitdir:~/projects/work/"]
+	path = ~/projects/work/.gitconfig
+
+[includeIf "gitdir:~/projects/oss/"]
+	path = ~/projects/oss/.gitconfig
+
+# Blame a portion of the file and check its commit history.
+git blame -L 15,26:path/to/file
+git log -L 15,26:path/to/file
+
+# ignore whitespace, detect codeline movement and ignore that in the blame or ignore the commit that created the file, or any commit at all
+git blame -w -C -C -C
+
+# Filter for string in git log
+git log -S files_watcher -p
+
+# Reference of log
+git reflog
+
+# git diff is line based, git word-diff will give you a word diff
+git diff --word-diff
+
+# Remember merge conflict and how it was solved, enabling the resolution of the same problem in the future saving repeat conflict resoluitons in future for the same conflict.
+git config --global rerere.enabled true
+
+# Puts branches into columns
+git branch --column
+
+# Prevents you from updating a file and removing another devs alterations.
+git push --force-with-leash
+
+# Signing commits with ssh instead of gpg
+git config gpg.format ssh
+git config user.signinkey ~/.ssh/key.pub
+git commit -S
+
+# Sign on push 
+git push --signed
+
+# Enables background maintenance on a time intrval 
+git maintenance start
+
+# Doesn't fetch but gets all the data and speeds up fetch
+prefetching
+
+# cashing commit operations
+commit-graph write
+
+# Observes for file changes instead of needing to assess all 
+git config core.fsmonitor true
+
+# chose which parts to copy 
+git clone --filter=******
+
+
+ 
+
+references 
+Pro git (book)
+gitbutler.com

@@ -1,0 +1,48 @@
+p{
+    font-family: Roboto, Arial;
+    margin-top:opx;
+    margin-bottom:0px;
+    margin-top:0px;
+  }
+
+body{
+    margin:0;
+    padding-top:80px;
+    padding-left:96px;
+    padding-right:24px;
+    background-color: rgb(227, 227, 227);}
+
+.sidebar{
+    position: fixed;
+    bottom:0;
+    left:0;
+    top: 55px;
+    width:72px;
+    background-color:white;
+    padding-top:5px;
+   }
+
+.sb_link{
+    height:74px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+.sb_link:hover{
+    background-color: rgb(186, 186, 186);
+    cursor:pointer;
+}
+.sb_link img{
+    height:24px;
+    
+}
+
+.sb_link div{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    margin-top:4px;
+    color:rgb(70, 70, 70)
+
+}

@@ -5,25 +5,21 @@
     font-family: 'Poppins', sans-serif;
 }
 .hero{
-    width: 65%;
     min-height:100vh;
     background-image: url(images/bckgrnd.png);
-    background-position: center;
-    background-size:cover;
     padding: 0px 0%;
     overflow:hidden;
-    align-items:center;
 }
 
 nav{
     padding:10px 0px;
     display:flex;
     align-items:center;
-    justify-content: space-between;
 }
 
 .logo{
     width:70px;
+    ;
 }
 
 h2 {color: black;

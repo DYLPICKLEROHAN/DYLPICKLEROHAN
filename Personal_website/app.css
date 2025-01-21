@@ -15,7 +15,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
-    background-color: 	rgb(119,192,227);
+    background-color: rgb(7, 92, 177);
     border-bottom-style:solid;
     border-color: rgb(1,61,123);
     border-width: 1px;
@@ -37,32 +37,61 @@
 
 .header-block2 button{
     color:rgb(1,61,123);
-    background-color: rgb(249,212,69);
-    border-radius: 20%;
-    border-width:0px;
-    height:40px;
+    background-color: rgb(146, 196, 226);
+    border-radius: 5px;
+    border-width:1px;
+    height:28px;
     margin:0 5px;
     padding:2px 4px;
     max-width:50%
 }
 
 .header-block2 button:hover{
-    box-shadow:inset 1px 2px 3px rgba(0, 0, 0, 0.5);
+    box-shadow:inset 2px 5px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: 0.15s;
+}
+
+.header-block3{
+    color:white;
 }
 
 body{
     height:1000px;
 }
+
 body main{
-    margin-top:60px;
     padding:20px;
     background-image: url(images/bckgrnd.png); 
+    background-position-y: bottom;
+    background-position-x: -10px;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 800px;
-    background-position: fixed;
     display:flex;
+    
+}
+
+.opening-block{
+    height:80%;
+    margin-top:60px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background-image: url(/Personal_website/images/profile.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position-y:bottom;
+    background-position-x: 15%;
+    background-color: rgba(237, 192, 125, 0.105);
+    box-shadow: inset 0px 20px 80px rgba(0, 0, 0, 0.5);
+
+}
+
+.opening-block p{
+    font-size: 28px;
+    font-weight:bold;
+    height: 80px;
     
 }
 
@@ -70,6 +99,15 @@ body main{
     color: rgb(1,61,123);
     max-width:50%;
 }
+
+.body-block2{
+    color: rgb(1,61,123);
+    width:50%;
+}
+
+.block1-column1 p{
+    color:black;
+} 
 
 .button-42{
     height:20px;
@@ -92,4 +130,18 @@ body main{
 h1{
     border-bottom-style: solid;
     border-color:grey;
+}
+
+.body-block2{
+    display: flex;
+    align-items: top;
+    align-content:center;
+}
+
+footer{
+    border-top-style: solid;
+    border-width: 1px;
+    border-color: rgb(96, 174, 222);
+    background-color: rgb(146, 196, 226);
+    
 }

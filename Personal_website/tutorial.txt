@@ -1,0 +1,29 @@
+HTML - HyperText Markup Language
+Orders instructing computer step by step to the create website 'elements'.
+extra spaces are ignored so multispaces are ignored
+Syntax matters, opening and closing 'tags' follow the following structure <element> ### </element>
+html entity codes exist for characters and symbols
+
+
+Element tags:
+button - <button>
+paragraph - <p>
+anchor - <a>
+break - <br>
+anchor link - <a href="address">  (href is the attribute, space between a and href is important)
+css stylesheet - <style>
+
+Attributes
+href - reference address
+target - same tab or different tab ("_blank" is new tab, default is same tab)
+class - a variable label to html element block. target it with css by writing .[class here] {}
+
+CSS - Cascading Style Sheets
+Can be written in html file <style></style>
+selector { css_property: css_value;}
+priority looks at selector
+selector<class
+
+.class:pseudoclasses{}
+hover - style whencursor over element
+active - style on onteraction

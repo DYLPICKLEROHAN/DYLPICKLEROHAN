@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+      <link rel="stylesheet" href="/tutorials/web_dev_tutorial/body.css">
+      <link rel="stylesheet" href="/tutorials/web_dev_tutorial/head.css">
+
+      <title>
+          Web Dev
+      </title>
+    </head>
+      <body>
+          <header></header>
+          <main>
+            
+              <button title="good job" class="red_button"
+              onclick="alert('this code used the onclick attribute within <button>');">
+                  Click Here
+              </button>
+              <p>
+                  lesson 1 complete
+              </p>
+
+            <script>
+              //alert("This code used <script>");
+
+              /*multiline
+              comments*/
+              
+              //This won't show on the page, it can be seen in  the console - inspect and use the console to see the answer recorded there.
+              console.log(2+2)
+              console.log('hello'+' ' + 'there')
+
+              let variable1= 3;
+              let calculation=2+2; console.log(calculation + 2);
+              const unchangeable_variable = 1 //const variables cannot be changed (safer)
+              var variable3 = 3 // (changeable)
+
+
+              variable1 = 5;
+            </script>
+            <script> let qty=0; </script>
+            <button onclick=" qty += 1" >+1</button>
+            <button onclick=" qty += 2" >+2</button>
+            <button onclick='console.log(`qty`);'>Show qty</button>
+            <button onclick='qty = 0; console.log(`cart was reset`);'>Reset cart</button>
+            <p>lesson 5 complete</p>
+
+            <script>
+              //boolean values
+              true
+              false
+              console.log(`is 3<5?`);console.log(3<5);
+              console.log(`is 5=5?`);console.log(5===5);
+              console.log(5 == '5.00'); // == converts both into the same type 
+              console.log(5 === '5.00') // checks equal value with no conversion attempt
+              console.log(`is 3 not equal to 5?`);console.log(3!==5);
+              
+              //if statements
+              if (3<5) {
+                console.log('3<5 was true');}
+                else {console.log('else')}
+              
+              //else if
+              const age = 15
+              if (age >=16) {
+                console.log('yes');
+              } else if (age>=14) {
+                console.log('almost there');
+              } else {
+                console.log('no');
+              }
+              </script>
+              
+              <!--rock scissors paper-->
+              <script> 
+              let select = null; 
+              let computerChoice = null;
+              let result = ''
+              </script>
+              <button class="rock" onclick=" 
+              const randomNumber = Math.random();
+              if (randomNumber >= 0 && randomNumber <1/3) {
+                 computerChoice = 'rock'
+                } else if (randomNumber >=1/3 && randomNumber<2/3) {  computerChoice = 'scissors';
+                } else {
+                 computerChoice='paper'}
+              
+              if (computerChoice==='rock') {
+                result = 'draw'
+              } else if (computerChoice==='paper'){
+                result='You lost'
+              } else (result='you win')
+
+              alert(`The computer selected ${computerChoice}, ${result}`);
+              ">Rock</button>
+              <button class="paper" onclick="select = 'paper'">Paper</button>
+              <button class="scissors" onclick=" select = 'scissors'">Scissors</button>
+
+              <script>
+               //falsy values include 0, False, '', Nan, undefined, null
+              //truthy includes all else
+
+              // Ternary operator ?:
+              console.log('this is true' ? 'truthy': 'falsey');
+              console.log(null ? 'truthy': 'falsey');
+              
+              //Guard operator &&
+              false && console.log("this does't even print because the first condition failed");
+
+              var message1 = false && 'hello';
+              console.log(message1);
+              var message2 = 6 && 'hello';
+              console.log(message2); //like a single line if statement
+
+              //Default operator //
+              const currency1 = 'eur' || 'USD';
+              console.log(currency1)
+              
+              const currency2 = undefined || 'USD';
+              console.log(currency2) //defaults to usd
+            
+              </script>
+            <p>Lesson 6 complete</p>
+
+            <!--functions-->
+            <script>
+              function function1() {
+                console.log('First function');
+                console.log('success')
+              }
+              function1();
+              // function for rock paper scissors
+              let computerChoice1 = undefined;
+              let outcome = undefined;
+
+              function opponentChoice1() {
+              const randomNumber = Math.random();
+
+              if (randomNumber >= 0 && randomNumber <1/3) {
+                 computerChoice1 = 'rock'
+                } else if (randomNumber >=1/3 && randomNumber<2/3) {  computerChoice1 = 'scissors';
+                } else {
+                 computerChoice1='paper'}
+                
+                return computerChoice1}
+              
+              function rockPaperScissors() {
+                opponentChoice1();
+                if (computerChoice1===outcome) {
+                  result = 'draw'
+                } else if (computerChoice1 === 'rock' &&        outcome==='scissors'){
+                  result='You lost'
+                } else if (computerChoice1 === 'paper' && outcome==='rock'){
+                  result='You lost'
+                } else if (computerChoice1 === 'scissors' && outcome==='paper'){
+                  result='You lost'
+                } else if (computerChoice1 === 'rock' && outcome==='paper'){
+                  result='You win'
+                } else if (computerChoice1 === 'paper' && outcome==='scissors'){
+                  result='You win'
+                } else if (computerChoice1 === 'scissors' && outcome==='rock'){
+                  result='You win'
+                }
+              alert(`
+              The computer selected ${computerChoice1},
+              you selected ${outcome}, 
+              ${result}`)
+            }
+            </script>
+
+            <button class="rock" onclick=" 
+             outcome = 'rock';
+            rockPaperScissors();">Rock</button>
+            <button class="paper" onclick="
+             outcome = 'paper'; 
+             rockPaperScissors()">Paper</button>
+            <button class="scissors" onclick="
+            outcome = 'scissors'; 
+            rockPaperScissors()">Scissors</button>
+          </main>
+      </body>
+</html>

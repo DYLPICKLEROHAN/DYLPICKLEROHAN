@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Rohan</title>
+    <link rel="stylesheet" href="app.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Header -->
+  <header>
+    <div class="header-bar">
+      <div class="header-block1">
+        <img class="logo" src="images/logo.png" class="logo"> 
+      </div>
+      <nav class="header-block2">
+        <ul>
+          <button class="button-about">Pretty</button>
+          <button class="button-experience">Buttons</button>
+          <!--<button class="button-contact">Contact Me</button>
+        -->
+        </ul>
+      </nav>
+      <div class="header-block3">ph: 0499 168 448<br>email: rohad09@hotmail.com</div>
+    </div>
+  </header>
+
+<!--Main body-->
+  <main>
+    <div class="body-block1">
+      <div class="block1-column1">
+        <h1 style="font-size: 32px;">Welcome!<br></h1>
+          <p>My name is Dylan Rohan, and you've stumbled across my sandbox.
+            I am a knoweldge hungry Data Scientist eager to learn new skills. In an effort to deepen my understanding of of web design and cyber-secuirty, and data collection, I've taken steps to learn html, javascript and css. To gain a better understandong of version control, I've been regularly pushing updted code to github with git and storing this website on github. I've also taken short courses in SQL, databricks, and AWS to broarden my horizons and become better aquainted with big data tools. I am looking for work that will enable me to continue learning about this space.</p>
+
+        <h1 style="font-size: 24px;"><br>Experience</h1>
+            <P><br>I held a graduate data science position for around 9 months prior to leaving to support my wife with her work in Sydney. Now hat I have completed my Masters in Data science I am looking for full time work. In this previous position, I was the only one in the team. The company was storing data on a shared excel document stored on the cloud, in some cases eac day represented a new sheet in the document. I used ETL techniques to transfer data across to a secure database and constructed dashboards primarily through PowerBI. I also developed apps to ensure data integrity and accountability that also made the task far simpler. The company had multiple teams, many of which were using different keywords to describe the same items, I unified the teams so they were all speaking in the same language. This enabled me to write a script that could more accurately report on stock movements from month to month (which I personally recorded with DroneDeploy) to compare against the fincance teams figures.  I also assisted the Quality control team by connecting temperature sensors to a database that prepared dashboards while also sending out warning messages on microsoft teams as an additional layer of security in case of potential fire. I also built them an app that securely recorded all their data and pushed it to a dashboard. Towards the end of my time there, I began the construction of a database of all external transport movements with the end goal of improving vehicle utilization. 
+            <br><br>
+            Since then I have used my analytical skills as an operations manager for an Australian celebrity. In this position I have reduced tasks that once took hours into tasks that take at most 5 minutes. I have also been in charge of compiling social media data and providing the talent with advice, and preparing financial reports. 
+            <br><br>
+            I also have an extensive background as a communicator. I was a gymnastics coach at a Highett Youth CLub for 5 years where I worked with participants of ages 0-65+ and participants and colleagues of all physical and mental abilities. I then spent the 3 years as both a tutor and science communicator, communicating with individuals as well as auditoriums of people in ways that made the complex more palatable. 
+            </P>
+
+
+        <h1 style="font-size: 24px;"><br>Education</h1>
+            <p class="degree"><br>Masters of Data Science <span class="period">(2021-2024)</span></p>
+            <span class="institute">&mdash; University of Adelaide</span>
+
+            <p class="degree"><br>Bachelors of Science <span class="period">(2015-2018)</span></p>
+            <span class="institute">&mdash; Monash University, Clayton</span>
+
+            <p class="degree"><br>VCE <span class="period">(2013-2014)</span></p>
+            <span class="institute">&mdash; St Bedes Catholic College, Mentone</span>
+
+        <h1 style="font-size: 24px;"><br>Skills</h1>
+
+        <h1 style="font-size: 24px;">Hobbies</h1>     
+        
+        <p>Last updated: <span id="datetime"></span> <br> Look back soon for updates!</p>
+        <script>
+          var dt = new Date();
+          document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+      </div>
+      <div class="block1-column2">
+        <button onclick="alertButton()">Click here</button>
+        <template>
+            <h2>Image</h2>
+            <img src="profile.jpg" width="1390", height ="2084"/>
+        </template>
+      </div>
+    </div>
+    <div class="body-block2">
+      <button class="button-42" onclick="hitchHikersGuide()">Answer to life the universe and everything</button>
+    </div>
+  </main>
+</body>
+<script src="app.js"></script>
+</html>

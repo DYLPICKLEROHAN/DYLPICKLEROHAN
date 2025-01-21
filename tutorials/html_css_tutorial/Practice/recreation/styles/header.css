@@ -1,0 +1,218 @@
+  .header{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    background-color:white;
+    height:55px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    border-bottom-style: 1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(240,240,240);
+    z-index:10
+}
+
+.header_right{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right:50px;
+    flex-shrink:0;
+    
+}
+
+.header_center{
+    flex:1;
+    margin-left:70px;
+    margin-right:35px;
+    max-width:500px;
+    align-items: center;
+    display: flex;
+}
+.header_left{
+    width:150px;
+    margin-left:70px;
+    display:flex;
+    align-items: center;
+}
+
+.hamburger_menu{
+    height:40px;
+    margin-right:10px; 
+}
+.hamburger_button{
+    height:40px;
+    width:40px;
+    border:none;
+    border-radius: 2px;
+    background-color: rgba(132, 130, 130, 0.228);
+    margin:0px;
+    padding:0px;
+}
+.youtube_icon{
+    height:30px;
+    object-fit:cover;
+    align-items: center;
+}
+.home_button{
+    border:none;
+    background-color: white;
+}
+
+.mic_icon{
+    width:30px;
+    height:30px;
+    border:0px;
+    margin: 0;
+    padding: 0;
+}
+.mic_button{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    border:0px;
+    margin: 0;
+    padding: 0;
+    position:relative;
+    
+    }
+.search_icon{
+    width:37px;
+    border:none;
+}
+
+.search_button{
+    height: 40px;
+    margin-right:15px;
+    border-width:1px;
+    border-style:solid;
+    border-color:  rgba(132, 130, 130, 0.228);
+    margin-top:-1px;
+    position:relative;
+}
+
+.search_button .tt,
+.mic_button .tt,
+.vid_button .tt,
+.hash_button .tt,
+.notification_button .tt{
+    position:absolute;
+    background-color: grey;
+    color:white;
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-right:8px;
+    padding-left: 8px;
+    border-radius:2px;
+    font-size: 12px;
+    bottom:-30px;
+    opacity:0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search_button:hover .tt,
+.mic_button:hover .tt,
+.vid_button:hover .tt,
+.hash_button:hover .tt,
+.notification_button:hover .tt{
+    opacity:1;
+    transition: opacity 0.15s;
+    font-family: Roboto, Arial;
+
+}
+
+.searchbar{
+    flex:1;
+    width:20;
+    height:36px;
+    font-size:16px;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(192,192,192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.5) 
+}
+
+.searchbar::placeholder{
+    font-family:Roboto, Arial;
+    font-size:16px;
+    padding-left:10px
+}
+
+.vid_icon{
+height:24px;
+}
+
+.notification_icon{
+    height:24px;
+    border:none;
+    }
+
+.notification_button{
+    height:40px;
+    border:none;
+    border-radius: 100%;
+    position:relative;
+}
+
+.div_notification{
+    position:relative;
+}
+.notification_count{
+    position:absolute;
+    color:white;
+    background-color: red;
+    top:-2px;
+    right:-2px;
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    padding-right:5px;
+    padding-left: 5px;
+    padding-top:2px;
+    padding-bottom:2px;
+    border-radius: 100%;
+}
+
+.vid_icon{
+    height:24px;
+    border:none;
+    }    
+.vid_button{
+        height:40px;
+        border:none;
+        border-radius: 100%;
+        position:relative;
+    }
+
+.hash_icon{
+    height:24px;
+    border:none;
+}
+.hash_button{
+    height:40px;
+    border:none;
+    border-radius: 100%;
+    position:relative;
+}
+
+.current_user{
+    height:32px;
+    width:32px;
+    border-radius:100%;
+    object-fit:cover;
+    object-position: center;
+}
+
+.search_button,
+.mic_button,
+.vid_button,
+.hash_button,
+.notification_button{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}

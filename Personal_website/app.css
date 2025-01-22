@@ -78,7 +78,7 @@ body main{
     display:flex;
     align-items: center;
     justify-content:center;
-    background-image: url(/Personal_website/images/profile.png);
+    background-image:url(/images/profile.png);
     background-size: 20%;
     background-repeat: no-repeat;
     background-position-y:bottom;
